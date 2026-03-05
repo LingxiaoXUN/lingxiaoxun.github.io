@@ -1,11 +1,10 @@
 <!doctype html>
-<!-- redeploy -->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME · Robotics</title>
-  <meta name="description" content="Personal website of YOUR NAME. Soft robotics, continuum robots, Cosserat rods, differentiable simulation." />
+  <title>Lingxiao XUN · Robotics</title>
+  <meta name="description" content="Lingxiao XUN — Postdoctoral fellow at ISIR (Sorbonne University). Soft/continuum robotics, Cosserat-rod modeling, differentiable simulation, contact mechanics, medical robotics." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
@@ -13,14 +12,15 @@
   <header class="container">
     <div class="top">
       <div class="id">
-        <h1>YOUR NAME</h1>
-        <p class="subtitle">Postdoc · Soft/Continuum Robotics · Differentiable Simulation</p>
+        <h1>Lingxiao XUN</h1>
+        <p class="subtitle">Postdoctoral Fellow · Soft/Continuum Robotics · Modeling, Control & Simulation</p>
         <p class="meta">
-          Paris, France ·
-          <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a> ·
-          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a> ·
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> ·
-          <a href="YOUR_CV_PDF_LINK" target="_blank" rel="noreferrer">CV (PDF)</a>
+          ISIR (UMR 7222), Sorbonne University · Paris, France<br />
+          <a href="mailto:xunl@isir.upmc.fr">xunl@isir.upmc.fr</a> ·
+          <a href="https://scholar.google.com/citations?user=EgVNwPYAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">Google Scholar</a>
+          <!-- Optional: add GitHub + CV PDF links here -->
+          <!-- · <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a> -->
+          <!-- · <a href="assets/LingxiaoXUN_CV.pdf" target="_blank" rel="noreferrer">CV (PDF)</a> -->
         </p>
       </div>
 
@@ -34,8 +34,9 @@
       <a href="#about">About</a>
       <a href="#news">News</a>
       <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#service">Service</a>
       <a href="#teaching">Teaching</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -45,21 +46,22 @@
     <section id="about" class="card">
       <h2>About</h2>
       <p>
-        I work on <strong>geometrically consistent modeling</strong> of slender/deformable robots (Cosserat rods),
-        <strong>differentiable contact simulation</strong>, and <strong>optimization/control</strong> for
-        soft and continuum robots, with applications to medical robotics.
+        I am a postdoctoral fellow in the RPI-Bio team at ISIR (Sorbonne University).
+        My research focuses on modeling, simulation, and control of soft/continuum robots and
+        medical robotic systems, with an emphasis on geometrically nonlinear mechanics,
+        contact interactions, and optimization-based methods.
       </p>
       <ul class="bullets">
-        <li>Keywords: Cosserat rods, Lie-group FEM, contact mechanics, differentiable simulation, model reduction, optimization.</li>
-        <li>Open-source: SoRoMechX (MATLAB-based simulation engine).</li>
+        <li><strong>Languages:</strong> Chinese (native), French (fluent), English (fluent).</li>
+        <li><strong>Keywords:</strong> Cosserat rods, rigid–flexible dynamics, contact mechanics, numerical optimization, MPC, medical robotics.</li>
       </ul>
     </section>
 
     <section id="news" class="card">
       <h2>News</h2>
       <ul class="timeline">
-        <li><span class="date">2026-03</span> Paper accepted: <em>Computers & Structures</em>.</li>
-        <li><span class="date">2026-02</span> Manuscripts under review: IJRR, RA-L.</li>
+        <li><span class="date">2025</span> CNRS GdR Robotique — Thesis Prize of the Year (First Prize).</li>
+        <!-- You can add live updates here (acceptances, talks, etc.) -->
       </ul>
     </section>
 
@@ -68,17 +70,48 @@
       <div class="grid">
         <div class="tile">
           <h3>Geometric modeling</h3>
-          <p>Configuration-based discretization on SE(3), element-wise strain reconstruction, Magnus-based integration.</p>
+          <p>Geometrically consistent modeling of soft/slender robots (Cosserat rods) and nonlinear deformable bodies.</p>
         </div>
         <div class="tile">
-          <h3>Differentiable contact</h3>
-          <p>Smooth complementarity / penalty energies, solver-friendly KKT structure, gradient-based planning & calibration.</p>
+          <h3>Contact & interaction</h3>
+          <p>Efficient contact mechanics modeling for elastic bodies and robot–environment interaction processes.</p>
         </div>
         <div class="tile">
-          <h3>Medical robotics pipeline</h3>
-          <p>CT → modeling → simulation → path optimization → experiments (reference workflow for CI insertion).</p>
+          <h3>Control & optimization</h3>
+          <p>Model-based controllers (Jacobian, optimal control, MPC) and learning-augmented methods for high-DOF systems.</p>
         </div>
       </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>RHU ICELAND (2024–)</h3>
+        <p>
+          Image-based robotic solution for transcatheter mitral annuloplasty via the femoral artery.
+          I lead the development of a digital twin of the surgical process and contribute to modeling and control of the ICELAND robot.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>ANR ROBOCOP (2020–2024)</h3>
+        <p>
+          Active cochlear implant: physical modeling of the implantation device, simulation of human–robot interaction during insertion,
+          and design of control algorithms to assist/automate the implantation process.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>ANR COSSEROOTS (2021–2023)</h3>
+        <p>
+          Dynamic modeling and model-based control of continuum robots, with applications to exploration and medical domains.
+        </p>
+      </div>
+
+      <p class="hint">
+        Tip: if you have public project pages (GitHub repos, videos, demos), add links under each project.
+      </p>
     </section>
 
     <section id="publications" class="card">
@@ -90,46 +123,63 @@
           <option value="all">All</option>
           <option value="journal">Journal</option>
           <option value="conference">Conference</option>
+          <option value="patent">Patent</option>
           <option value="preprint">Preprint</option>
         </select>
       </div>
 
       <div id="pubList" class="pub-list"></div>
-      <p class="hint">Maintenance: edit <code>assets/data/publications.json</code> only.</p>
+
+      <p class="hint">
+        Maintenance: edit <code>assets/data/publications.json</code> only.
+      </p>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>SoRoMechX</h3>
-        <p>Object-oriented differentiable multi-body simulator for deformable robots (rods/surfaces/contact/constraints).</p>
-        <p class="links">
-          <a href="https://github.com/" target="_blank" rel="noreferrer">Code</a>
-          · <a href="#" target="_blank" rel="noreferrer">Docs</a>
-        </p>
-      </div>
+    <section id="service" class="card">
+      <h2>Professional Service</h2>
+      <ul class="bullets">
+        <li>Reviewer: IEEE Transactions on Robotics (T-RO)</li>
+        <li>Reviewer: The International Journal of Robotics Research (IJRR)</li>
+        <li>Reviewer: IEEE Robotics and Automation Letters (RA-L)</li>
+        <li>Reviewer: IEEE International Conference on Robotics and Automation (ICRA)</li>
+        <li>Reviewer: Soft Robotics</li>
+        <li>Reviewer: Nonlinear Dynamics</li>
+      </ul>
     </section>
 
     <section id="teaching" class="card">
-      <h2>Teaching & Service</h2>
+      <h2>Teaching & Supervision</h2>
+
+      <h3 style="margin:10px 0 6px;">Centrale Lille — Adjunct Lecturer (20h)</h3>
       <ul class="bullets">
-        <li>Reviewer: RA-L / TRO / IJRR (edit as needed).</li>
-        <li>Teaching assistant: (edit as needed).</li>
+        <li>Modeling and Control of Systems: Robotics Applications (L3/M1) — Seminar, 12h</li>
+        <li>Cyber-Physical Systems (M1) — Tutorials (TD), 8h</li>
       </ul>
+
+      <h3 style="margin:14px 0 6px;">University of Lille / Inria — M2 Project Supervision (50h eq. TD)</h3>
+      <ul class="bullets">
+        <li>2021–2022: Robust control of a flexible robot</li>
+        <li>2021–2022: Control of a flexible tripod robot</li>
+        <li>2022–2023: Modeling of a concentric-tube robot</li>
+        <li>2023–2024: Learning-based control of a rigid manipulator</li>
+        <li>2023–2024: Simulation and control of a deformable continuum robot</li>
+      </ul>
+
+      <p class="hint">Overall teaching load: 70h eq. TD.</p>
     </section>
 
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a><br />
-        Affiliation: YOUR LAB / University (edit as needed)
+        Email: <a href="mailto:xunl@isir.upmc.fr">xunl@isir.upmc.fr</a><br />
+        Affiliation: ISIR (UMR 7222), Sorbonne University, Paris, France<br />
+        Google Scholar: <a href="https://scholar.google.com/citations?user=EgVNwPYAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">Profile</a>
       </p>
     </section>
   </main>
 
   <footer class="container footer">
-    <p>© <span id="year"></span> YOUR NAME · Built with HTML/CSS/JS · Hosted on GitHub Pages</p>
+    <p>© <span id="year"></span> Lingxiao XUN · Hosted on GitHub Pages</p>
   </footer>
 
   <script src="assets/script.js"></script>
