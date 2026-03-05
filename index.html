@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOUR NAME · Robotics</title>
+  <meta name="description" content="Personal website of YOUR NAME. Soft robotics, continuum robots, Cosserat rods, differentiable simulation." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="top">
+      <div class="id">
+        <h1>YOUR NAME</h1>
+        <p class="subtitle">Postdoc · Soft/Continuum Robotics · Differentiable Simulation</p>
+        <p class="meta">
+          Paris, France ·
+          <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a> ·
+          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a> ·
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> ·
+          <a href="YOUR_CV_PDF_LINK" target="_blank" rel="noreferrer">CV (PDF)</a>
+        </p>
+      </div>
+
+      <div class="avatar">
+        <!-- Replace with your photo: assets/avatar.jpg -->
+        <img src="https://dummyimage.com/240x240/ddd/000.png&text=Photo" alt="Portrait" />
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I work on <strong>geometrically consistent modeling</strong> of slender/deformable robots (Cosserat rods),
+        <strong>differentiable contact simulation</strong>, and <strong>optimization/control</strong> for
+        soft and continuum robots, with applications to medical robotics.
+      </p>
+      <ul class="bullets">
+        <li>Keywords: Cosserat rods, Lie-group FEM, contact mechanics, differentiable simulation, model reduction, optimization.</li>
+        <li>Open-source: SoRoMechX (MATLAB-based simulation engine).</li>
+      </ul>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="timeline">
+        <li><span class="date">2026-03</span> Paper accepted: <em>Computers & Structures</em>.</li>
+        <li><span class="date">2026-02</span> Manuscripts under review: IJRR, RA-L.</li>
+      </ul>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research</h2>
+      <div class="grid">
+        <div class="tile">
+          <h3>Geometric modeling</h3>
+          <p>Configuration-based discretization on SE(3), element-wise strain reconstruction, Magnus-based integration.</p>
+        </div>
+        <div class="tile">
+          <h3>Differentiable contact</h3>
+          <p>Smooth complementarity / penalty energies, solver-friendly KKT structure, gradient-based planning & calibration.</p>
+        </div>
+        <div class="tile">
+          <h3>Medical robotics pipeline</h3>
+          <p>CT → modeling → simulation → path optimization → experiments (reference workflow for CI insertion).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+
+      <div class="pub-controls">
+        <input id="pubSearch" type="search" placeholder="Search title/author/venue..." />
+        <select id="pubFilter">
+          <option value="all">All</option>
+          <option value="journal">Journal</option>
+          <option value="conference">Conference</option>
+          <option value="preprint">Preprint</option>
+        </select>
+      </div>
+
+      <div id="pubList" class="pub-list"></div>
+      <p class="hint">Maintenance: edit <code>assets/data/publications.json</code> only.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>SoRoMechX</h3>
+        <p>Object-oriented differentiable multi-body simulator for deformable robots (rods/surfaces/contact/constraints).</p>
+        <p class="links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">Code</a>
+          · <a href="#" target="_blank" rel="noreferrer">Docs</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="teaching" class="card">
+      <h2>Teaching & Service</h2>
+      <ul class="bullets">
+        <li>Reviewer: RA-L / TRO / IJRR (edit as needed).</li>
+        <li>Teaching assistant: (edit as needed).</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a><br />
+        Affiliation: YOUR LAB / University (edit as needed)
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> YOUR NAME · Built with HTML/CSS/JS · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
