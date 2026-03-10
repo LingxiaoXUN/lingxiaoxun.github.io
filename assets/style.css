@@ -65,10 +65,9 @@ code{
 .profile-photo{
   width:180px;
   height:180px;
-  border-radius:8px;
+  border-radius:50%;
   object-fit:cover;
-  border:1px solid var(--border);
-  background:#f0f0f0;
+  border:2px solid #e6e6e6;
   display:block;
 }
 
