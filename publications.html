@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lingxiao XUN · Publications</title>
+  <meta name="description" content="Publications of Lingxiao XUN." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="top">
+      <div class="id">
+        <h1>Lingxiao XUN</h1>
+        <p class="subtitle">Publications</p>
+        <p class="meta">
+          ISIR (UMR 7222), Sorbonne University · Paris, France<br />
+          <a href="mailto:xunl@isir.upmc.fr">xunl@isir.upmc.fr</a> ·
+          <a href="https://scholar.google.com/citations?user=EgVNwPYAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">Google Scholar</a>
+        </p>
+      </div>
+
+      <div class="avatar">
+        <img src="assets/avatar.jpg" alt="Portrait" />
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Publications</h2>
+
+      <div class="pub-controls">
+        <input id="pubSearch" type="search" placeholder="Search title/author/venue..." />
+        <select id="pubFilter">
+          <option value="all">All</option>
+          <option value="journal">Journal</option>
+          <option value="conference">Conference</option>
+          <option value="patent">Patent</option>
+          <option value="preprint">Preprint</option>
+        </select>
+      </div>
+
+      <div id="pubList" class="pub-list"></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Lingxiao XUN · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
