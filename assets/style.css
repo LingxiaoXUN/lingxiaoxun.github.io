@@ -32,13 +32,13 @@ code{
   border-radius:.35rem;
 }
 
-/* ===== Page layout ===== */
+/* ==== two-column layout ==== */
 .page{
   max-width:1300px;
   margin:0 auto;
   padding:32px 24px;
   display:grid;
-  grid-template-columns:280px minmax(0, 1fr);
+  grid-template-columns:280px minmax(0,1fr);
   gap:36px;
 }
 
@@ -55,7 +55,7 @@ code{
   min-width:0;
 }
 
-/* ===== Sidebar ===== */
+/* ==== left column ==== */
 .avatar{
   margin-bottom:18px;
 }
@@ -63,7 +63,7 @@ code{
 .profile-photo{
   width:180px;
   height:180px;
-  border-radius:50%;
+  border-radius:24px;
   object-fit:cover;
   border:1px solid var(--border);
   background:#f0f0f0;
@@ -99,9 +99,9 @@ code{
   line-height:1.6;
 }
 
-/* ===== Top navigation ===== */
+/* ==== nav ==== */
 .topbar{
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 
 .nav{
@@ -124,7 +124,7 @@ code{
   text-decoration:none;
 }
 
-/* ===== Cards / sections ===== */
+/* ==== content cards ==== */
 .card{
   background:var(--card);
   border:1px solid var(--border);
@@ -164,7 +164,7 @@ code{
   font-weight:500;
 }
 
-/* ===== Research tiles ===== */
+/* ==== research grid ==== */
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -189,7 +189,7 @@ code{
   line-height:1.6;
 }
 
-/* ===== Publications ===== */
+/* ==== publications ==== */
 .pub-controls{
   display:flex;
   gap:10px;
@@ -253,7 +253,6 @@ code{
   background:#f8f8f8;
 }
 
-/* ===== Misc ===== */
 .project{
   margin-bottom:16px;
 }
@@ -278,7 +277,7 @@ code{
   padding:28px 0 10px;
 }
 
-/* ===== Responsive ===== */
+/* ==== mobile ==== */
 @media (max-width:900px){
   .page{
     grid-template-columns:1fr;
