@@ -40,9 +40,13 @@ code{
 
 .top{
   display:flex;
-  gap:24px;
-  align-items:center;
-  justify-content:space-between;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.id{
+  text-align:left;
 }
 
 .id h1{
