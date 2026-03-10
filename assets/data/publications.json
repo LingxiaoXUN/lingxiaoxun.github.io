@@ -18,7 +18,7 @@
     "venue": "IEEE Robotics and Automation Letters",
     "year": 2026,
     "type": "journal",
-    "status": "under review",
+    "status": "under_review",
     "role": "first",
     "pdf": "https://arxiv.org/pdf/2603.05309",
     "doi": "https://doi.org/10.1016/j.compstruc.2026.108181",
@@ -52,14 +52,14 @@
     "code": ""
   },
   {
-    "title": "Numerical Simulation and Path Planning of Cochlear Implantation",
-    "authors": "L. Xun, G. Zheng, A. Kruszewski, R. Torres, C. Duriez",
+    "title": "CT-Enabled Patient-Specific Simulation and Contact-Aware Robotic Planning for Cochlear Implantation",
+    "authors": "L. Xun, G. Zheng, A. Kruszewski, R. Torres",
     "venue": "IEEE Transactions on Robotics",
     "year": 2025,
     "type": "journal",
     "status": "under_review",
     "role": "first",
-    "pdf": "https://drive.google.com/file/d/1WrRLWVq5z3__ZNXTnGLTxG0e3QIvGp7l/view?usp=sharing",
+    "pdf": "https://arxiv.org/pdf/2603.05333",
     "doi": "",
     "video": "",
     "code": ""
