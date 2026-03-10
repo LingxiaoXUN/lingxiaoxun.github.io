@@ -65,7 +65,7 @@ code{
 .profile-photo{
   width:180px;
   height:180px;
-  border-radius:50%;
+  border-radius:25%;
   object-fit:cover;
   border:2px solid #e6e6e6;
   display:block;
