@@ -9,122 +9,131 @@
 </head>
 
 <body>
-  <header class="container">
-    <div class="top">
-      <div class="avatar">
-        <img src="assets/avatar.jpg" alt="Portrait" />
+  <div class="page">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar">
+          <img class="profile-photo" src="assets/avatar.jpg" alt="Portrait" />
+        </div>
+
+        <div class="id">
+          <h1>Lingxiao XUN</h1>
+          <p class="position">Postdoctoral Fellow · Soft/Continuum Robotics · Modeling, Control & Simulation</p>
+          <p class="affiliation">
+            ISIR (UMR 7222), Sorbonne University · Paris, France
+          </p>
+          <p class="contact-item">
+            <a href="mailto:xunl@isir.upmc.fr">xunl@isir.upmc.fr</a>
+          </p>
+          <p class="contact-item">
+            <a href="https://scholar.google.com/citations?user=EgVNwPYAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">Google Scholar</a>
+          </p>
+        </div>
       </div>
-      <div class="id">
-        <h1>Lingxiao XUN</h1>
-        <p class="subtitle">Postdoctoral Fellow · Soft/Continuum Robotics · Modeling, Control & Simulation</p>
-        <p class="meta">
-          ISIR (UMR 7222), Sorbonne University · Paris, France<br />
-          <a href="mailto:xunl@isir.upmc.fr">xunl@isir.upmc.fr</a> ·
-          <a href="https://scholar.google.com/citations?user=EgVNwPYAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">Google Scholar</a>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Short Bio</h2>
+
+        <p>
+          I am currently a postdoctoral fellow at the Institut des Systèmes Intelligents et de Robotique (ISIR),
+          Sorbonne University, where I joined the RPI-Bio team in April 2024.
         </p>
-      </div>
-    </div>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+        <p>
+          Before that, I completed my PhD at Inria Lille (CRIStAL laboratory), under the supervision of
+          Alexandre Kruszewski and Gang Zheng. This PhD was awarded the
+          <a href="https://www.gdr-robotique.org/prix_de_these/?an=2024" target="_blank" rel="noreferrer">best PhD thesis award</a>
+          by the CNRS research group on robotics for the year 2024.
+        </p>
 
-  <main class="container">
-    <section class="card">
-      <h2>Short Bio</h2>
+        <p>
+          Prior to my PhD, I obtained an engineering degree in robotics from Arts et Métiers ParisTech.
+        </p>
 
-      <p>
-        I am currently a postdoctoral fellow at the Institut des Systèmes Intelligents et de Robotique (ISIR),
-        Sorbonne University, where I joined the RPI-Bio team in April 2024.
-      </p>
+        <p>
+          My research interests broadly lie in the modeling, simulation, and control of soft and continuum
+          robotic systems. I am particularly interested in geometrically consistent modeling of deformable
+          robots, contact mechanics for robot–environment interaction, and optimization-based methods
+          for control and estimation of high-dimensional robotic systems. These approaches are applied
+          to medical robotics, surgical simulation, and robot-assisted interventions.
+        </p>
 
-      <p>
-        Before that, I completed my PhD at Inria Lille (CRIStAL laboratory), under the supervision of
-        Alexandre Kruszewski and Gang Zheng. This PhD was awarded the
-        <a href="https://www.gdr-robotique.org/prix_de_these/?an=2024" target="_blank" rel="noreferrer">best PhD thesis award</a>
-        by the CNRS research group on robotics for the year 2024.
-      </p>
+        <p>
+          I am always open to research discussions and collaborations. Please feel free to reach out to me!
+        </p>
 
-      <p>
-        Prior to my PhD, I obtained an engineering degree in robotics from Arts et Métiers ParisTech.
-      </p>
+        <ul class="bullets">
+          <li><strong>Languages:</strong> Chinese (native), French (fluent), English (fluent).</li>
+          <li><strong>Keywords:</strong> Rigid–flexible dynamics, contact mechanics, numerical optimization, control, medical robotics.</li>
+        </ul>
+      </section>
 
-      <p>
-        My research interests broadly lie in the modeling, simulation, and control of soft and continuum
-        robotic systems. I am particularly interested in geometrically consistent modeling of deformable
-        robots, contact mechanics for robot–environment interaction, and optimization-based methods
-        for control and estimation of high-dimensional robotic systems. These approaches are applied
-        to medical robotics, surgical simulation, and robot-assisted interventions.
-      </p>
-
-      <p>
-        I am always open to research discussions and collaborations. Please feel free to reach out to me!
-      </p>
-
-      <ul class="bullets">
-        <li><strong>Languages:</strong> Chinese (native), French (fluent), English (fluent).</li>
-        <li><strong>Keywords:</strong> Rigid–flexible dynamics, contact mechanics, numerical optimization, control, medical robotics.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Research</h2>
-      <div class="grid">
-        <div class="tile">
-          <h3>Geometric modeling</h3>
-          <p>Geometrically consistent modeling of soft/slender robots (Cosserat rods) and nonlinear deformable bodies.</p>
+      <section class="card">
+        <h2>Research</h2>
+        <div class="grid">
+          <div class="tile">
+            <h3>Geometric modeling</h3>
+            <p>Geometrically consistent modeling of soft/slender robots (Cosserat rods) and nonlinear deformable bodies.</p>
+          </div>
+          <div class="tile">
+            <h3>Contact & interaction</h3>
+            <p>Efficient contact mechanics modeling for elastic bodies and robot–environment interaction processes.</p>
+          </div>
+          <div class="tile">
+            <h3>Control & optimization</h3>
+            <p>Model-based controllers and learning-augmented methods for high-DOF systems.</p>
+          </div>
         </div>
-        <div class="tile">
-          <h3>Contact & interaction</h3>
-          <p>Efficient contact mechanics modeling for elastic bodies and robot–environment interaction processes.</p>
-        </div>
-        <div class="tile">
-          <h3>Control & optimization</h3>
-          <p>Model-based controllers and learning-augmented methods for high-DOF systems.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="card">
-      <h2>News</h2>
-      <ul class="timeline">
-        <li>
-          <span class="date">27 Feb 2026</span>
-          New paper accepted in <em>Computers &amp; Structures</em> (Q1):
-          <a href="https://authors.elsevier.com/a/1mjg4AQPsI-hM" target="_blank" rel="noreferrer">
-            “Geometrically Explicit Cosserat-Rod Modeling with Piecewise Linear Strain for Complex Rod Systems”
-          </a>.
-        </li>
-        <li>
-          <span class="date">17 Feb 2026</span>
-          My PhD work was reported by The French National Centre for Scientific Research (CNRS).
-          <a href="https://www.ins2i.cnrs.fr/fr/cnrsinfo/lingxiao-xun-et-quentin-le-lidec-recompenses-par-le-prix-de-these-2024-du-gdr-robotique-0" target="_blank" rel="noreferrer">[Link]</a>
-        </li>
-        <li>
-          <span class="date">1 Oct 2025</span>
-          I received the
-          <a href="https://www.gdr-robotique.org/prix_de_these/?an=2024" target="_blank" rel="noreferrer">CNRS GdR Robotique Thesis Prize</a>
-          (First Prize).
-        </li>
-        <li>
-          <span class="date">1 Apr 2024</span>
-          I joined the ISIR laboratory at Sorbonne University as a postdoctoral fellow.
-        </li>
-        <li>
-          <span class="date">14 Mar 2024</span>
-          I defended my PhD thesis (Inria Lille / Centrale Lille, DEFROST).
-        </li>
-      </ul>
-    </section>
-  </main>
+      <section class="card">
+        <h2>News</h2>
+        <ul class="timeline">
+          <li>
+            <span class="date">27 Feb 2026</span>
+            New paper accepted in <em>Computers &amp; Structures</em> (Q1):
+            <a href="https://authors.elsevier.com/a/1mjg4AQPsI-hM" target="_blank" rel="noreferrer">
+              “Geometrically Explicit Cosserat-Rod Modeling with Piecewise Linear Strain for Complex Rod Systems”
+            </a>.
+          </li>
+          <li>
+            <span class="date">17 Feb 2026</span>
+            My PhD work was reported by The French National Centre for Scientific Research (CNRS).
+            <a href="https://www.ins2i.cnrs.fr/fr/cnrsinfo/lingxiao-xun-et-quentin-le-lidec-recompenses-par-le-prix-de-these-2024-du-gdr-robotique-0" target="_blank" rel="noreferrer">[Link]</a>
+          </li>
+          <li>
+            <span class="date">1 Oct 2025</span>
+            I received the
+            <a href="https://www.gdr-robotique.org/prix_de_these/?an=2024" target="_blank" rel="noreferrer">CNRS GdR Robotique Thesis Prize</a>
+            (First Prize).
+          </li>
+          <li>
+            <span class="date">1 Apr 2024</span>
+            I joined the ISIR laboratory at Sorbonne University as a postdoctoral fellow.
+          </li>
+          <li>
+            <span class="date">14 Mar 2024</span>
+            I defended my PhD thesis (Inria Lille / Centrale Lille, DEFROST).
+          </li>
+        </ul>
+      </section>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Lingxiao XUN · Hosted on GitHub Pages</p>
-  </footer>
+      <footer class="footer">
+        <p>© <span id="year"></span> Lingxiao XUN · Hosted on GitHub Pages</p>
+      </footer>
+    </main>
+  </div>
 
   <script src="assets/script.js"></script>
 </body>
