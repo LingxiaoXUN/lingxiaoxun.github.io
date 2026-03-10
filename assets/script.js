@@ -9,7 +9,7 @@ async function loadPublications() {
   function prettyRole(role) {
     const map = {
       first: "First author",
-      corresponding: "Corresponding",
+      corresponding: "Corresponding author",
       second: "Second author",
       coauthor: "Co-author"
     };
