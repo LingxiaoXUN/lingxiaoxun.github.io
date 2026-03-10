@@ -137,6 +137,12 @@ code{
   text-decoration:none;
 }
 
+.nav a.active{
+  font-weight:600;
+  border-bottom:2px solid var(--link);
+  padding-bottom:2px;
+}
+
 /* ===== Section blocks ===== */
 .card{
   background:transparent;
