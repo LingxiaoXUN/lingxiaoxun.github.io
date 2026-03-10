@@ -8,7 +8,7 @@
     "status": "published",
     "role": "first",
     "pdf": "https://authors.elsevier.com/a/1mjg4AQPsI-hM",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.compstruc.2026.108181",
     "video": "https://drive.google.com/file/d/15UIdLC8VuWhmC3ZT9UMGT5xzt5WFsPrH/view?usp=sharing",
     "code": ""
   },
@@ -21,7 +21,7 @@
     "status": "under_review",
     "role": "first",
     "pdf": "https://arxiv.org/pdf/2603.05309",
-    "doi": "https://doi.org/10.1016/j.compstruc.2026.108181",
+    "doi": "",
     "video": "",
     "code": ""
   },
