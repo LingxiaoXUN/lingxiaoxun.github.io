@@ -15,7 +15,7 @@
     {
     "title": "Constraint-Free Static Modeling of Continuum Parallel Robot",
     "authors": "L. Xun, B. Tamadazte, M.A. Diezinger, G.J. Laurent",
-    "venue": "IEEE Robotics and Automation Letters",
+    "venue": "",
     "year": 2026,
     "type": "journal",
     "status": "under_review",
@@ -41,7 +41,7 @@
   {
     "title": "Nonlinear Model Predictive Control and Shape Estimation of Soft Manipulator",
     "authors": "L. Xun, H. Li, G. Zheng",
-    "venue": "IEEE Transactions on Robotics",
+    "venue": "",
     "year": 2025,
     "type": "journal",
     "status": "under_review",
@@ -54,7 +54,7 @@
   {
     "title": "CT-Enabled Patient-Specific Simulation and Contact-Aware Robotic Planning for Cochlear Implantation",
     "authors": "L. Xun, G. Zheng, A. Kruszewski, R. Torres",
-    "venue": "IEEE Transactions on Robotics",
+    "venue": "",
     "year": 2025,
     "type": "journal",
     "status": "under_review",
