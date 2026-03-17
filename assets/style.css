@@ -15,11 +15,11 @@ html,body{
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.7;
+  line-height:1.65; /* 🔧 稍微收紧 */
 }
 
 body{
-  font-size:16px;
+  font-size:15px; /* 🔧 更学术一点（原来16） */
 }
 
 a{
@@ -38,11 +38,49 @@ code{
   font-size:.92em;
 }
 
+////////////////////////////////////////////////////////////
+/* 🔥 NEW：顶部导航（关键） */
+////////////////////////////////////////////////////////////
+
+.top-nav{
+  width:100%;
+  padding:14px 40px;
+  border-bottom:1px solid var(--border);
+
+  display:flex;
+  gap:22px;
+
+  font-size:.95rem;
+  background:#fff;
+
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.top-nav a{
+  color:var(--text);
+}
+
+.top-nav a:hover{
+  text-decoration:none;
+  color:var(--link);
+}
+
+.top-nav a.active{
+  border-bottom:2px solid var(--link);
+  padding-bottom:2px;
+  font-weight:600;
+}
+
+////////////////////////////////////////////////////////////
 /* ===== Overall layout ====== */
+////////////////////////////////////////////////////////////
+
 .page{
   max-width:1280px;
   margin:0 auto;
-  padding:32px 28px 40px;
+  padding:22px 28px 40px; /* 🔧 顶部减小 */
   display:grid;
   grid-template-columns:280px minmax(0,1fr);
   gap:42px;
@@ -54,18 +92,21 @@ code{
 
 .profile-card{
   position:sticky;
-  top:28px;
+  top:90px; /* 🔥 避开顶部导航 */
 }
 
+////////////////////////////////////////////////////////////
 /* ===== Left sidebar ===== */
+////////////////////////////////////////////////////////////
+
 .avatar{
-  margin-bottom:18px;
+  margin-bottom:16px;
 }
 
 .profile-photo{
-  width:180px;
-  height:180px;
-  border-radius:25%;
+  width:170px;
+  height:170px;
+  border-radius:50%; /* 🔥 改成圆形（更标准） */
   object-fit:cover;
   border:2px solid #e6e6e6;
   display:block;
@@ -76,262 +117,176 @@ code{
 }
 
 .id h1{
-  margin:0 0 10px 0;
-  font-size:1.6rem;
+  margin:0 0 8px 0;
+  font-size:1.55rem;
   line-height:1.15;
   font-weight:700;
-  letter-spacing:.01em;
 }
 
 .position{
-  margin:0 0 14px 0;
+  margin:0 0 12px 0;
   color:var(--muted);
-  line-height:1.55;
-  font-size:1rem;
+  font-size:.95rem;
 }
 
 .affiliation{
-  margin:0 0 10px 0;
+  margin:0 0 8px 0;
   color:var(--muted);
-  line-height:1.6;
-  font-size:.98rem;
+  font-size:.92rem;
 }
 
 .contact-item{
-  margin:0 0 6px 0;
+  margin:0 0 5px 0;
   color:var(--muted);
-  line-height:1.5;
-  font-size:.98rem;
+  font-size:.92rem;
 }
 
+////////////////////////////////////////////////////////////
 /* ===== Right content area ===== */
+////////////////////////////////////////////////////////////
+
 .main-content{
   min-width:0;
 }
 
-.topbar{
-  margin-bottom:10px;
-}
-
+/* ❌ 旧导航直接禁用 */
+.topbar,
 .nav{
-  display:flex;
-  gap:18px;
-  flex-wrap:wrap;
-  padding-bottom:12px;
-  border-bottom:1px solid var(--border);
+  display:none;
 }
 
-.nav a{
-  padding:0;
-  border:none;
-  border-radius:0;
-  background:none;
-  color:var(--text);
-  font-size:1rem;
-}
-
-.nav a:hover{
-  background:none;
-  color:var(--link);
-  text-decoration:none;
-}
-
-.nav a.active{
-  font-weight:600;
-  border-bottom:2px solid var(--link);
-  padding-bottom:2px;
-}
-
+////////////////////////////////////////////////////////////
 /* ===== Section blocks ====== */
+////////////////////////////////////////////////////////////
+
 .card{
   background:transparent;
   border:none;
   border-top:1px solid var(--border);
-  border-radius:0;
-  padding:20px 0 0 0;
-  margin-top:24px;
+  padding:18px 0 0 0;
+  margin-top:22px;
 }
 
 .card h2{
-  margin:0 0 14px 0;
-  font-size:1.22rem;
+  margin:0 0 12px 0;
+  font-size:1.15rem;
   font-weight:700;
-  letter-spacing:.01em;
 }
 
 .card h3{
-  margin:16px 0 8px 0;
-  font-size:1.02rem;
+  margin:14px 0 6px 0;
+  font-size:.98rem;
   font-weight:700;
 }
 
 .card p{
-  margin:0 0 14px 0;
-  color:var(--text);
-  line-height:1.75;
+  margin:0 0 12px 0;
+  line-height:1.65;
 }
 
 .bullets{
   margin:0;
-  padding-left:20px;
-  color:var(--text);
-  line-height:1.75;
+  padding-left:18px;
+  line-height:1.65;
 }
 
-.bullets li{
-  margin-bottom:4px;
-}
-
+////////////////////////////////////////////////////////////
 /* ===== News ===== */
+////////////////////////////////////////////////////////////
+
 .timeline{
   margin:0;
-  padding-left:20px;
-  color:var(--text);
-  line-height:1.8;
+  padding-left:18px;
+  line-height:1.7;
 }
 
 .timeline li{
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 
 .timeline .date{
   display:inline-block;
-  min-width:110px;
+  min-width:105px;
   color:var(--muted);
   font-weight:600;
 }
 
+////////////////////////////////////////////////////////////
 /* ===== Research grid ===== */
+////////////////////////////////////////////////////////////
+
 .grid{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:14px;
-  margin-top:8px;
+  gap:12px;
 }
 
 .tile{
   border:1px solid var(--border);
   border-radius:4px;
-  padding:14px;
+  padding:12px;
   background:#ffffff;
 }
 
 .tile h3{
-  margin:0 0 8px 0;
-  font-size:1rem;
+  margin:0 0 6px 0;
+  font-size:.95rem;
 }
 
 .tile p{
   margin:0;
   color:var(--muted);
-  line-height:1.65;
-  font-size:.97rem;
+  font-size:.92rem;
 }
 
-/* ===== Publication controls ===== */
-.pub-controls{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-bottom:14px;
-}
-
-.pub-controls input,
-.pub-controls select{
-  background:#ffffff;
-  border:1px solid var(--border);
-  color:var(--text);
-  border-radius:3px;
-  padding:9px 11px;
-  outline:none;
-  font-family:inherit;
-  font-size:.96rem;
-}
-
-.pub-controls input:focus,
-.pub-controls select:focus{
-  border-color:var(--link);
-}
-
-/* ===== Publication list ===== */
-.pub-list{
-  display:flex;
-  flex-direction:column;
-  gap:0;
-}
+////////////////////////////////////////////////////////////
+/* ===== Publications（你后面会用） ===== */
+////////////////////////////////////////////////////////////
 
 .pub{
-  border:none;
   border-bottom:1px solid var(--border);
-  border-radius:0;
-  padding:14px 0;
-  background:transparent;
+  padding:12px 0;
 }
 
 .pub .title{
   font-weight:700;
-  line-height:1.55;
 }
 
 .pub .authors,
 .pub .venue{
   color:var(--muted);
-  margin-top:4px;
-  line-height:1.65;
-  font-size:.97rem;
+  font-size:.92rem;
 }
 
 .pub .links{
-  margin-top:7px;
-  font-size:.96rem;
+  margin-top:6px;
+  font-size:.92rem;
 }
 
-.pub .tag{
-  display:inline-block;
-  font-size:.72rem;
-  padding:1px 7px;
-  border:1px solid var(--border);
-  border-radius:999px;
-  margin-left:8px;
-  color:var(--muted);
-  background:#fafafa;
-  vertical-align:middle;
-}
-
-/* ===== Other blocks ===== */
-.project{
-  margin-bottom:16px;
-}
-
-.project h3{
-  margin:0 0 6px;
-}
-
-.project p{
-  margin:0;
-  color:var(--text);
-  line-height:1.7;
-}
-
-.hint{
-  color:var(--muted);
-  font-size:.95rem;
-}
-
+////////////////////////////////////////////////////////////
 /* ===== Footer ===== */
+////////////////////////////////////////////////////////////
+
 .footer{
   color:var(--muted);
-  text-align:left;
-  padding:28px 0 10px;
-  font-size:.94rem;
+  padding:24px 0 10px;
+  font-size:.9rem;
 }
 
+////////////////////////////////////////////////////////////
 /* ===== Responsive ===== */
+////////////////////////////////////////////////////////////
+
 @media (max-width:980px){
+
+  .top-nav{
+    padding:12px 18px;
+  }
+
   .page{
     grid-template-columns:1fr;
-    gap:28px;
-    padding:24px 18px 32px;
+    gap:26px;
+    padding:18px;
   }
 
   .profile-card{
@@ -339,8 +294,8 @@ code{
   }
 
   .profile-photo{
-    width:140px;
-    height:140px;
+    width:130px;
+    height:130px;
   }
 
   .grid{
@@ -349,6 +304,6 @@ code{
 
   .timeline .date{
     min-width:0;
-    margin-right:8px;
+    margin-right:6px;
   }
 }
