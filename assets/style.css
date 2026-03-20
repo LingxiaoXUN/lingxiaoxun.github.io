@@ -414,3 +414,25 @@ code{
 .video-venue a{
   color:var(--link);
 }
+
+.contact-item a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.icon{
+  width:16px;
+  height:16px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  flex:0 0 16px;
+}
+
+.icon svg{
+  width:16px;
+  height:16px;
+  display:block;
+}
