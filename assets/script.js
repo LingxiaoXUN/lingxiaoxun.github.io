@@ -41,7 +41,7 @@ async function loadPublications() {
 
     list.innerHTML = items.map(p => {
       const links = [
-        p.pdf ? `<a href="${p.pdf}" target="_blank" rel="noreferrer">Paper</a>` : "",
+        p.pdf ? `<a href="${p.pdf}" target="_blank" rel="noreferrer">PDF</a>` : "",
         p.video ? `<a href="${p.video}" target="_blank" rel="noreferrer">Video</a>` : "",
         p.code ? `<a href="${p.code}" target="_blank" rel="noreferrer">Code</a>` : "",
         p.doi ? `<a href="${p.doi}" target="_blank" rel="noreferrer">DOI</a>` : ""
