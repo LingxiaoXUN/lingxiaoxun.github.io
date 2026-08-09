@@ -1,5 +1,17 @@
 [
     {
+    "title": "Dynamic Model and Identification of Cable-Driven Hybrid Rigid–Soft Manipulators",
+    "authors": "Y Guo, L Xun, H Li, A Polyakov, G Zheng",
+    "venue": "IEEE/ASME Transactions on Mechatronics",
+    "year": 2026,
+    "type": "journal",
+    "status": "published",
+    "role": "coauthor",
+    "pdf": "https://ieeexplore.ieee.org/abstract/document/11561069/",
+    "doi": "https://doi.org/10.1109/TMECH.2026.3693967",
+    "code": ""
+  },
+    {
     "title": "Geometrically Explicit Cosserat-Rod Modeling with Piecewise Linear Strain for Complex Rod Systems",
     "authors": "L. Xun, B. Tamadazte",
     "venue": "Computers & Structures",
