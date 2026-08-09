@@ -6,9 +6,10 @@
     "year": 2026,
     "type": "journal",
     "status": "published",
-    "role": "coauthor",
+    "role": "second",
     "pdf": "https://ieeexplore.ieee.org/abstract/document/11561069/",
     "doi": "https://doi.org/10.1109/TMECH.2026.3693967",
+    "video": "",
     "code": ""
   },
     {
@@ -80,9 +81,9 @@
     "title": "Strain-Based Cosserat Dynamic Control of Soft Manipulator",
     "authors": "H. Li, L. Xun, G. Zheng, F. Boyer, F. Renda, C. D. Santina",
     "venue": "The International Journal of Robotics Research",
-    "year": 2025,
+    "year": 2026,
     "type": "journal",
-    "status": "under_review",
+    "status": "Accepted",
     "role": "second",
     "pdf": "",
     "doi": "",
